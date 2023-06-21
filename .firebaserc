@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-app-24a75": {
+      "hosting": {
+        "my-first-project": [
+          "angular-app-24a75"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-app-24a75"
+  }
+}

@@ -1,0 +1,25 @@
+#LogInBox
+{
+    height: 450px;
+    width: 500px;
+    border: outset 3px;
+    padding: 1%;
+    margin: 5%;
+    text-align: center;
+}
+
+#SignUpLink
+{
+    text-decoration: none;
+}
+
+#NewAcc
+{
+    margin-top: 3%;
+}
+
+#checkBox
+{
+    text-align: left;
+    padding-left: 2%;
+}

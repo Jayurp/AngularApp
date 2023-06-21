@@ -1,0 +1,14 @@
+#SignUp
+{
+    height: 450px;
+    width: 500px;
+    border: outset 3px;
+    padding: 1%;
+    margin: 5%;
+}
+
+#checkBox
+{
+    text-align: left;
+    padding-left: 2%;
+}

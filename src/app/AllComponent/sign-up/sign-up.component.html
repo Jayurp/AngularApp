@@ -1,0 +1,26 @@
+<div id="SignUp">
+    <h1>
+        Sign Up
+    </h1>
+    <br>
+    <div class="form-floating mb-3" id="email">
+        <input type="email" class="form-control" #email (keyup)="getEmail(email.value)" placeholder="name@example.com" required>
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating" id="password">
+        <input [type]="showPass? 'text':'password'" class="form-control" #pass1 (keyup)="getPass1(pass1.value)" id="floatingPassword" placeholder="Password"  required>
+        <label for="floatingPassword">Password</label>
+      </div>
+      <br>
+      <div class="form-floating" id="password2">
+        <input [type]="showPass?'text': 'password'" class="form-control" #pass2 (keyup)="getPass2(pass2.value)" id="floatingPassword" placeholder="Password" required>
+        <label for="floatingPassword">Confirm Password</label>
+      </div>
+      <br>
+      <div id="checkBox">
+        <input type="checkbox" id="showPassword" (click)="showPassword()"> Show Password
+      </div>
+      <br>
+        <button type="submit" (click)="submitDetails()" class="btn btn-primary">Submit</button>
+      <br>
+</div>

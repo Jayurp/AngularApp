@@ -1,0 +1,28 @@
+<div id="LogInBox">
+    <h1>
+        Log In
+    </h1>
+    <br>
+    <div class="form-floating mb-3" id="email">
+        <input type="email" #email (keyup)="getEmail(email.value)" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating" id="password">
+        <input #pass (keyup)="getPass(pass.value)" class="form-control" id="floatingPassword" placeholder="Password" [type]="showPass?'text': 'password'">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <br>
+      <div id="checkBox">
+        <input type="checkbox" id="showPassword" (click)="showPassword()"> Show Password
+      </div>
+      <br>
+        <button type="submit" (click)="logHere()" class="btn btn-primary">Log In</button>
+      <br>
+      <div id="NewAcc">
+        New here?<a routerLink="/SignUp" id="SignUpLink" onclick="gotoSignUp">  Sign Up</a>
+    </div>
+    <div id="NewAcc">
+      Forgot Password?<a routerLink="/ForgotPassword" id="SignUpLink" >  Reset Password</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
